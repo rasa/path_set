@@ -1,0 +1,23 @@
+# Microsoft Developer Studio Generated Dependency File, included by path_set.mak
+
+.\path_set.cpp : \
+	".\UpdatePathVariable.h"\
+	".\version.h"\
+	{$(INCLUDE)}"debug.h"\
+	{$(INCLUDE)}"getopt.h"\
+	{$(INCLUDE)}"Optimize.h"\
+	{$(INCLUDE)}"Stackwalker.h"\
+	{$(INCLUDE)}"ver_defaults.h"\
+	
+
+.\UpdatePathVariable.cpp : \
+	".\UpdatePathVariable.h"\
+	{$(INCLUDE)}"debug.h"\
+	{$(INCLUDE)}"SystemMessage.h"\
+	
+
+.\path_set.rc : \
+	".\path_set.ico"\
+	".\version.h"\
+	{$(INCLUDE)}"ver_defaults.h"\
+	

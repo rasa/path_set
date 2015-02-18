@@ -1,19 +1,33 @@
 # Microsoft Developer Studio Generated Dependency File, included by path_set.mak
 
 .\path_set.cpp : \
-	".\UpdatePathVariable.h"\
-	".\version.h"\
+	{$(INCLUDE)}"basetsd.h"\
+	{$(INCLUDE)}"guiddef.h"\
+	{$(INCLUDE)}"propidl.h"\
+	{$(INCLUDE)}"reason.h"\
+	{$(INCLUDE)}"shtypes.h"\
+	{$(INCLUDE)}"specstrings.h"\
+	{$(INCLUDE)}"stralign.h"\
+	{$(INCLUDE)}"tvout.h"\
 	{$(INCLUDE)}"debug.h"\
 	{$(INCLUDE)}"getopt.h"\
-	{$(INCLUDE)}"Optimize.h"\
-	{$(INCLUDE)}"Stackwalker.h"\
+	{$(INCLUDE)}"optimize.h"\
+	{$(INCLUDE)}"stackwalker.h"\
+	".\UpdatePathVariable.h"\
+	".\version.h"\
 	{$(INCLUDE)}"ver_defaults.h"\
 	
 
 .\UpdatePathVariable.cpp : \
-	".\UpdatePathVariable.h"\
+	{$(INCLUDE)}"basetsd.h"\
+	{$(INCLUDE)}"guiddef.h"\
+	{$(INCLUDE)}"reason.h"\
+	{$(INCLUDE)}"specstrings.h"\
+	{$(INCLUDE)}"stralign.h"\
+	{$(INCLUDE)}"tvout.h"\
 	{$(INCLUDE)}"debug.h"\
-	{$(INCLUDE)}"SystemMessage.h"\
+	{$(INCLUDE)}"systemmessage.h"\
+	".\UpdatePathVariable.h"\
 	
 
 .\path_set.rc : \

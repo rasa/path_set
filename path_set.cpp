@@ -32,6 +32,12 @@ change REG type if specified type is different
 
 */
 
+#ifdef _MSC_VER
+#pragma warning(disable:4996)
+#pragma comment(lib, "advapi32.lib")
+#pragma comment(lib, "user32.lib")
+#endif
+
 #ifndef WIN32_LEAN_AND_MEAN
 # define WIN32_LEAN_AND_MEAN 1
 #endif
@@ -40,7 +46,8 @@ change REG type if specified type is different
 
 #include <windows.h>
 #include <stdio.h>
-#include <atlbase.h> // required for Stackwalker
+#include <cstdlib>
+//#include <atlbase.h> // required for Stackwalker
 
 #include "Stackwalker.h"
 #include "Optimize.h"

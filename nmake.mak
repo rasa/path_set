@@ -1,10 +1,10 @@
 all:
-	$(MAKE)/f path_set.mak CFG="path_set - Win32 Release"	all
-	$(MAKE)/f path_set.mak CFG="path_set - Win32 Debug"	all
+	$(MAKE) /f path_set.mak CFG="path_set - Win32 Release"	all
+	$(MAKE) /f path_set.mak CFG="path_set - Win32 Debug"	all
 
 clean:
-	$(MAKE)/f path_set.mak CFG="path_set - Win32 Release"	clean
-	$(MAKE)/f path_set.mak CFG="path_set - Win32 Debug"	clean
+	$(MAKE) /f path_set.mak CFG="path_set - Win32 Release"	clean
+	$(MAKE) /f path_set.mak CFG="path_set - Win32 Debug"	clean
 
 realclean: clean
 	-cmd /c del /s *.bak

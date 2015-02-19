@@ -1,20 +1,23 @@
-path_set changelog
+## 1.4 (unreleased)
 
-Version 1.3 - 12 Jul 06:
+  * Updated to Visual Studio 2013
+  * Switch to MIT license
 
-	Changed ~ character to `, as ~ is common in 8.3 paths
-	Standardized version information across all programs
+## 1.3 (12 Jul 06)
 
-Version 1.2 - 08 Apr 06:
+  * Changed ~ character to `, as ~ is common in 8.3 paths
+  * Standardized version information across all programs
 
-	Added .rc and .ico files
-	Improved build scripts
-	Updated documentation
+## 1.2 (08 Apr 06)
 
-Version 1.1 - 17 Feb 06:
+  * Added .rc and .ico files
+  * Improved build scripts
+  * Updated documentation
 
-	Renamed from AddPath to path_set
+## 1.1 (17 Feb 06)
 
-Version 1.0 - 06 Jan 06:
+  * Renamed from AddPath to path_set
 
-	Initial release
+## 1.0 (06 Jan 06)
+
+  * Initial release

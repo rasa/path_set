@@ -1,9 +1,12 @@
-path_set 1.3 - Jul 07 2006
-Copyright (c) 2005-2006 Ross Smith II (http://smithii.com) All Rights Reserved
+# path_set 
 
-------------------------------------------------------------------------------
+Modify system and user environment variables
 
-Usage: path_set [options] path [path2 ...]
+## Usage
+
+````
+path_set [options] path [path2 ...]
+
 Options:
 -v VarName Append path(s) to environmental variable VarName (default is Path)
 -s         Modify variable in the system environment (default)
@@ -17,8 +20,11 @@ Options:
 -z         Use REG_SZ type (default)
 -c         Show version and copyright statement
 -?         Show this help screen
+````
 
-Examples:
+## Examples
+
+````
   rem append c:\bin to the system Path variable:
   path_set -n c:\bin
 
@@ -27,29 +33,35 @@ Examples:
 
   rem Add "C:\Program Files\Java\bin" to the system Path:
   path_set -n "C:\Program Files\Java\bin"
+````
 
 or, even better:
 
+````
   rem add or replace JAVA_HOME with %ProgramFiles%\Java
   path_set -n -r -x -v JAVA_HOME `ProgramFiles`\Java
   
   rem Append %JAVA_HOME%\bin to the system Path:
   path_set -n `JAVA_HOME`\bin
+````
 
-------------------------------------------------------------------------------
+## Contributing
 
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version.
+To contribute to this project, please see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+## Bugs
 
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+To view existing bugs, or report a new bug, please see the [issues](/issues) page for this project.
 
-$Id$
+## License
+
+This project is [MIT licensed](LICENSE).
+
+## Changelog
+
+Please see [CHANGELOG.md](CHANGELOG.md) for the version history for this project.
+
+## Contact
+
+This project was originally developed by [Ross Smith II](mailto:ross@smithii.com).
+Any enhancements and suggestions are welcome.

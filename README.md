@@ -1,6 +1,6 @@
-# path_set 
+# path_set [![Flattr this][flatter_png]][flatter]
 
-Modify system and user environment variables
+Modify system and user environment variables.
 
 ## Usage
 
@@ -24,12 +24,12 @@ Options:
 
 ## Examples
 
-````
+````batch
   rem append c:\bin to the system Path variable:
   path_set -n c:\bin
 
   rem prepend c:\usr\local\bin and c:\bin to the system Path:
-  path_set -n -p c:\usr\local\bin c:\bin 
+  path_set -n -p c:\usr\local\bin c:\bin
 
   rem Add "C:\Program Files\Java\bin" to the system Path:
   path_set -n "C:\Program Files\Java\bin"
@@ -37,10 +37,10 @@ Options:
 
 or, even better:
 
-````
+````batch
   rem add or replace JAVA_HOME with %ProgramFiles%\Java
   path_set -n -r -x -v JAVA_HOME `ProgramFiles`\Java
-  
+
   rem Append %JAVA_HOME%\bin to the system Path:
   path_set -n `JAVA_HOME`\bin
 ````
@@ -51,17 +51,25 @@ To contribute to this project, please see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Bugs
 
-To view existing bugs, or report a new bug, please see the [issues](/issues) page for this project.
+To view existing bugs, or report a new bug, please see [issues](../../issues).
+
+## Changelog
+
+To view the version history for this project, please see [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 
 This project is [MIT licensed](LICENSE).
 
-## Changelog
-
-Please see [CHANGELOG.md](CHANGELOG.md) for the version history for this project.
-
 ## Contact
 
-This project was originally developed by [Ross Smith II](mailto:ross@smithii.com).
-Any enhancements and suggestions are welcome.
+This project was created and is maintained by [Ross Smith II][] [![endorse][endorse_png]][endorse]
+
+Feedback, suggestions, and enhancements are welcome.
+
+[Ross Smith II]: mailto:ross@smithii.com "ross@smithii.com"
+[flatter]: https://flattr.com/submit/auto?user_id=rasa&url=https%3A%2F%2Fgithub.com%2Frasa%2Fpath_set
+[flatter_png]: http://button.flattr.com/flattr-badge-large.png "Flattr this"
+[endorse]: https://coderwall.com/rasa
+[endorse_png]: https://api.coderwall.com/rasa/endorsecount.png "endorse"
+

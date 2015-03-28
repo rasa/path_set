@@ -1,3 +1,7 @@
+## 1.6 (28-Mar-2015)
+
+  * Fix segfault due to linker issue (#1)
+
 ## 1.5 (27-Mar-2015)
 
   * Executables signed with StartSSL code signing certificate

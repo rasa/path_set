@@ -34,9 +34,6 @@ change REG type if specified type is different
 #include <cstdlib>
 //#include <atlbase.h> // required for Stackwalker
 
-#include "Stackwalker.h"
-#include "Optimize.h"
-#include "debug.h"
 #include "UpdatePathVariable.h"
 #include "getopt.h"
 
